@@ -1,0 +1,132 @@
+*{
+    margin:0;
+}
+body{
+  height: 200vh;
+  font-family: sans-serif;
+}
+.boxes{
+    margin: 12em 11em auto;
+    border: 2px dashed black;
+    padding: 3%;
+    width:25em;
+    height:40em;
+    position: relative;
+}
+.box1{
+    border:2px solid black;
+    width: 8em;
+    height:7em;
+    padding: 2em;
+    background-color: blueviolet;
+    position: static;
+}
+.box2{
+    border: 3px double goldenrod;
+    width:10em;
+    height:10em;
+    margin-top: 10%;
+    padding:3px;
+    position: relative;
+}
+.box3{
+    border: 3px dotted black;
+    width:10em;
+    height:10em;
+    top: 0;
+    right:0;
+    padding:3px;
+    position: absolute;
+    background-color: brown;
+}
+.box4{
+    border: 3px solid rgb(255, 4, 4);
+    width:5em;
+    height:1.5em;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  background: bisque;
+}
+.box5{
+    position: sticky;
+    border: 3px solid rgb(84, 53, 53);
+    width:4em;
+    height:5em;
+    top:0;
+
+    background: bisque;
+}
+.btn{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(23, 235, 23);
+    border-radius: 2em;
+    width: 8em;
+    height: 3em;
+}
+header{
+    position:sticky;
+    top:0;
+    background-color: lightseagreen;
+    text-align: center;
+    height: 3em;
+    
+}
+
+.searchbar{
+  position: relative;
+  width: 200px;
+  margin-top: 3%;
+}
+
+.searchbar input{
+  width: 100%;
+  padding: 10px;
+  height: 30px;
+  margin-left: 10px;
+  border-radius: 3em;
+}
+.icon{
+  position: absolute;
+  right: 1px;
+  top: 12px;
+}
+h1::before{
+  content: "";
+  display:block;
+  width: 100px;
+  height: 3px;
+  background: black;
+  margin-bottom: 5px;
+}
+.tooltip{
+   position: relative;
+   cursor: pointer;
+}
+.tooltip::after{
+    content: "tooltip hover";
+    position: absolute;
+    display: none;
+    border:2px solid black;
+    background-color: lightgrey;
+    
+}
+.tooltip:hover::after{
+    display: block;
+}
+li{
+    list-style: none;
+}
+li::before{
+    content: "✔️";
+}
+.btnhover{
+    background-color: rgb(102, 154, 233);
+    
+}
+.btnhover:hover{
+    background-color: rgb(233, 102, 102);
+    color: white;
+}
