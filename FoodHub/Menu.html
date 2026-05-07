@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu - FoodHub</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="head">
+    <h1>FoodHub!</h1>
+    <p>Taste. Love. Repeat.</p>
+</header>
+
+<nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="Login.html">Login</a>
+    <a href="Menu.html">Menu</a>
+    <a href="Profile.html">Profile</a>
+</nav>
+
+<main class="container">
+
+<h2 class="center">Our Special Menu</h2>
+
+<!-- 🔥 CARD GRID -->
+<section class="menu-grid">
+
+<div class="card">
+    <img src="https://theawesomedaily.com/wp-content/uploads/2016/09/pictures-of-pizza-23-1.jpg" alt="Can't support this img">
+    <h3>Pizza</h3>
+    <p>Cheesy delight with toppings</p>
+    <h4>Just ₹299</h4>
+    <p class="discount">10% Discount</p>
+    <button onclick="addToCart('Pizza')">Add to cart</button>
+</div>
+
+<div class="card">
+    <img src="https://static.vecteezy.com/system/resources/previews/019/023/604/non_2x/front-view-tasty-meat-burger-with-cheese-and-salad-free-photo.jpg" alt="Can't support this img">
+    <h3>Burger</h3>
+    <p>Juicy grilled burger</p>
+    <h4>Just ₹199</h4>
+    <p class="discount">30% Discount</p>
+    <button onclick="addToCart('Burger')">Add to cart</button>
+</div>
+
+<div class="card">
+    <img src="https://static.vecteezy.com/system/resources/previews/030/632/756/large_2x/asian-noodles-image-hd-free-photo.jpg" alt="Can't support this img">
+    <h3>Noodles</h3>
+    <p>Spicy street style noodles</p>
+    <h4>Just ₹149</h4>
+    <p class="discount">20% Discount</p>
+    <button onclick="addToCart('Noodles')">Add to cart</button>
+</div>
+
+<div class="card">
+    <img src="https://thumbs.dreamstime.com/b/traditional-south-indian-thali-served-banana-leaf-rice-side-dishes-339996040.jpg" alt="Can't support this img">
+    <h3>Meals</h3>
+    <p>South Indian full meals</p>
+    <h4>Just ₹249</h4>
+    <p class="discount">15% Discount</p>
+    <button onclick="addToCart('Meals')">Add to cart</button>
+</div>
+
+</section>
+
+<h2 class="center">Menu Table</h2>
+
+<table>
+ <tr>
+    <th rowspan="2">Item</th>
+    <th colspan="2">Details</th>
+</tr> 
+<tr>
+    <th>Type</th>
+    <th>Price</th>
+</tr>
+
+<tr>
+    <td>Pizza</td>
+    <td>Veg</td>
+    <td>₹299</td>
+</tr>
+
+<tr>
+    <td>Burger</td>
+    <td>Non-Veg</td>
+    <td>₹199</td>
+</tr>
+
+<tr>
+    <td>Noodles</td>
+    <td>Veg</td>
+    <td>₹149</td>
+</tr>
+
+<tr>
+    <td>Meals</td>
+    <td>Full</td>
+    <td>₹249</td>
+</tr>
+</table>
+
+<h3>Available Categories</h3>
+<ul class="list">
+    <li>Fast Food</li>
+    <li>South Indian</li>
+    <li>Chinese</li>
+    <li>Beverages</li>
+</ul>
+
+
+<h3>Top Ordered Items</h3>
+<ol class="list">
+    <li>Pizza</li>
+    <li>Burger</li>
+    <li>Noodles</li>
+</ol>
+
+</main>
+
+<footer>&copy; 2024 FoodHub</footer>
+
+<script>
+function addToCart(item){
+    alert(item + " added to cart!");
+}
+</script>
+
+</body>
+</html>
